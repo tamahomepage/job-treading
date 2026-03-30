@@ -1,0 +1,91 @@
+[
+  {
+    "id": "frag_vn_power_demand",
+    "title": "ベトナム南部で電力需要が急増",
+    "regionPool": ["SEA"],
+    "industryPool": ["energy"],
+    "sourceType": "government",
+    "tags": ["need", "power", "demand_growth"],
+    "certaintyRange": [2, 4],
+    "expiryRange": [2, 3],
+    "weightRules": [
+      {
+        "when": "market.region.SEA.opportunityScore >= 70",
+        "bonus": 2
+      }
+    ],
+    "leadValue": 2
+  },
+  {
+    "id": "frag_sg_bank_lending",
+    "title": "シンガポール系銀行がインフラ融資先を探索",
+    "regionPool": ["SEA", "MiddleEast"],
+    "industryPool": ["energy", "infrastructure"],
+    "sourceType": "bank",
+    "tags": ["finance"],
+    "certaintyRange": [2, 3],
+    "expiryRange": [2, 4],
+    "weightRules": [],
+    "leadValue": 2
+  },
+  {
+    "id": "frag_transition_subsidy",
+    "title": "送配電・移行電源向けの補助金制度が拡充",
+    "regionPool": ["SEA"],
+    "industryPool": ["energy"],
+    "sourceType": "government",
+    "tags": ["access", "subsidy", "government_access", "permit"],
+    "certaintyRange": [2, 4],
+    "expiryRange": [2, 3],
+    "weightRules": [],
+    "leadValue": 2
+  },
+  {
+    "id": "frag_port_bottleneck",
+    "title": "港湾混雑が慢性化し、輸入燃料と食料に遅延懸念",
+    "regionPool": ["SEA"],
+    "industryPool": ["energy", "food", "infrastructure"],
+    "sourceType": "trade_media",
+    "tags": ["risk", "port", "logistics_bottleneck"],
+    "certaintyRange": [1, 3],
+    "expiryRange": [2, 4],
+    "weightRules": [],
+    "leadValue": 1
+  },
+  {
+    "id": "frag_jp_transformer_supply",
+    "title": "日本メーカーが大型変圧器の海外案件を探している",
+    "regionPool": ["Japan", "SEA"],
+    "industryPool": ["energy"],
+    "sourceType": "manufacturer",
+    "tags": ["supply", "grid", "manufacturer_capacity"],
+    "certaintyRange": [2, 3],
+    "expiryRange": [3, 4],
+    "weightRules": [],
+    "leadValue": 2
+  },
+  {
+    "id": "frag_local_conglomerate_land",
+    "title": "現地財閥が港湾近接地を持ち、JVパートナーを模索",
+    "regionPool": ["SEA"],
+    "industryPool": ["energy", "food", "infrastructure"],
+    "sourceType": "local_conglomerate",
+    "tags": ["partner", "access"],
+    "certaintyRange": [2, 4],
+    "expiryRange": [2, 3],
+    "weightRules": [],
+    "leadValue": 2
+  },
+  {
+    "id": "frag_id_cold_chain_gap",
+    "title": "インドネシアでコールドチェーン不足が顕在化",
+    "regionPool": ["SEA"],
+    "industryPool": ["food"],
+    "sourceType": "trade_media",
+    "tags": ["need", "food_security", "cold_chain", "distribution"],
+    "certaintyRange": [2, 4],
+    "expiryRange": [3, 4],
+    "weightRules": [],
+    "leadValue": 2
+  }
+]

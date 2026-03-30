@@ -1,0 +1,42 @@
+[
+  {
+    "id": "energy",
+    "name": "Energy",
+    "capitalIntensity": 5,
+    "baseReturnMin": 0.08,
+    "baseReturnMax": 0.17,
+    "esgSensitivity": 4,
+    "templateIds": ["gas_to_power", "t_and_d_upgrade"],
+    "synergyFamilies": ["power", "fuel", "grid", "industrial_park"]
+  },
+  {
+    "id": "food",
+    "name": "Food",
+    "capitalIntensity": 3,
+    "baseReturnMin": 0.07,
+    "baseReturnMax": 0.14,
+    "esgSensitivity": 3,
+    "templateIds": ["grain_cold_chain"],
+    "synergyFamilies": ["grain", "cold_chain", "distribution"]
+  },
+  {
+    "id": "mobility",
+    "name": "Mobility",
+    "capitalIntensity": 3,
+    "baseReturnMin": 0.08,
+    "baseReturnMax": 0.16,
+    "esgSensitivity": 4,
+    "templateIds": [],
+    "synergyFamilies": ["dealer", "finance", "service"]
+  },
+  {
+    "id": "infrastructure",
+    "name": "Infrastructure",
+    "capitalIntensity": 4,
+    "baseReturnMin": 0.07,
+    "baseReturnMax": 0.13,
+    "esgSensitivity": 2,
+    "templateIds": [],
+    "synergyFamilies": ["port", "utility", "industrial_park"]
+  }
+]

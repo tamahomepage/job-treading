@@ -1,0 +1,53 @@
+[
+  {
+    "id": "Japan",
+    "name": "Japan",
+    "demandGrowthBase": {
+      "energy": 1,
+      "food": 1,
+      "mobility": 1,
+      "infrastructure": 1
+    },
+    "politicalRiskBase": 1,
+    "fxVolatilityBase": 1,
+    "permitDifficultyBase": 2,
+    "disasterRiskBase": 2,
+    "baseTrust": 2,
+    "preferredPartnerTypes": ["manufacturer", "bank", "hq_department"],
+    "specialTags": ["advanced_manufacturing", "stable_rule_of_law"]
+  },
+  {
+    "id": "SEA",
+    "name": "Southeast Asia",
+    "demandGrowthBase": {
+      "energy": 4,
+      "food": 3,
+      "mobility": 4,
+      "infrastructure": 5
+    },
+    "politicalRiskBase": 2,
+    "fxVolatilityBase": 3,
+    "permitDifficultyBase": 3,
+    "disasterRiskBase": 4,
+    "baseTrust": 1,
+    "preferredPartnerTypes": ["government", "conglomerate", "bank", "state_owned"],
+    "specialTags": ["growth_market", "import_dependency", "monsoon"]
+  },
+  {
+    "id": "MiddleEast",
+    "name": "Middle East",
+    "demandGrowthBase": {
+      "energy": 3,
+      "food": 2,
+      "mobility": 2,
+      "infrastructure": 3
+    },
+    "politicalRiskBase": 4,
+    "fxVolatilityBase": 2,
+    "permitDifficultyBase": 2,
+    "disasterRiskBase": 1,
+    "baseTrust": 0,
+    "preferredPartnerTypes": ["state_owned", "fund", "bank"],
+    "specialTags": ["hydrocarbon_base", "sovereign_capital"]
+  }
+]

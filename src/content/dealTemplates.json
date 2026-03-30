@@ -1,0 +1,102 @@
+[
+  {
+    "id": "gas_to_power",
+    "name": "LNG to Power",
+    "industry": "energy",
+    "requiredSlots": [
+      "demand",
+      "technology",
+      "localPartner",
+      "finance",
+      "permit",
+      "logistics",
+      "offtake",
+      "operator"
+    ],
+    "mandatoryTags": ["power", "government_access"],
+    "optionalTags": ["finance", "port", "subsidy", "partner", "fuel_import"],
+    "baseCapex": 180,
+    "baseEquityRatio": 0.25,
+    "baseIrr": 0.11,
+    "timeToOperate": 2,
+    "riskWeights": {
+      "fx": 3,
+      "regulation": 3,
+      "supply_chain": 4,
+      "esg": 3
+    },
+    "synergyTags": ["lng", "power", "grid", "sea_logistics"],
+    "unlockRules": [
+      {
+        "allOfTags": ["need", "power"],
+        "anyOfTags": ["finance", "access"],
+        "regionIds": ["SEA", "MiddleEast"]
+      }
+    ]
+  },
+  {
+    "id": "t_and_d_upgrade",
+    "name": "Transmission and Distribution Upgrade",
+    "industry": "energy",
+    "requiredSlots": [
+      "demand",
+      "technology",
+      "localPartner",
+      "finance",
+      "permit",
+      "operator"
+    ],
+    "mandatoryTags": ["grid"],
+    "optionalTags": ["subsidy", "government_access", "partner"],
+    "baseCapex": 95,
+    "baseEquityRatio": 0.3,
+    "baseIrr": 0.1,
+    "timeToOperate": 2,
+    "riskWeights": {
+      "fx": 2,
+      "regulation": 2,
+      "supply_chain": 2,
+      "esg": 1
+    },
+    "synergyTags": ["power", "grid"],
+    "unlockRules": [
+      {
+        "allOfTags": ["grid"],
+        "anyOfTags": ["government_access", "subsidy"],
+        "regionIds": ["SEA"]
+      }
+    ]
+  },
+  {
+    "id": "grain_cold_chain",
+    "name": "Grain Import and Cold Chain",
+    "industry": "food",
+    "requiredSlots": [
+      "demand",
+      "localPartner",
+      "finance",
+      "permit",
+      "logistics",
+      "operator"
+    ],
+    "mandatoryTags": ["food_security", "cold_chain"],
+    "optionalTags": ["partner", "distribution", "port"],
+    "baseCapex": 72,
+    "baseEquityRatio": 0.35,
+    "baseIrr": 0.12,
+    "timeToOperate": 1,
+    "riskWeights": {
+      "fx": 2,
+      "supply_chain": 3,
+      "esg": 2
+    },
+    "synergyTags": ["grain", "distribution", "cold_chain", "sea_logistics"],
+    "unlockRules": [
+      {
+        "allOfTags": ["food_security", "cold_chain"],
+        "anyOfTags": ["finance", "port"],
+        "regionIds": ["SEA"]
+      }
+    ]
+  }
+]

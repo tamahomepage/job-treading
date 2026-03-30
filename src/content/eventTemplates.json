@@ -1,0 +1,49 @@
+[
+  {
+    "id": "evt_export_control",
+    "name": "輸出規制強化",
+    "category": "regulation",
+    "triggerRules": {
+      "minTurn": 2,
+      "industries": ["energy", "mobility"],
+      "macroFlags": ["growth_rebound"]
+    },
+    "severityBase": 3,
+    "targetRules": {
+      "regionIds": ["SEA", "MiddleEast"],
+      "industries": ["energy"],
+      "dealTags": ["grid", "lng"]
+    },
+    "immediateEffects": [
+      {
+        "key": "dealProgressPenalty",
+        "value": 15
+      }
+    ],
+    "responseOptions": ["contract_rebuild", "switch_supplier", "take_loss"],
+    "upsideUnlocks": ["local_processing_unlock"]
+  },
+  {
+    "id": "evt_partner_scandal",
+    "name": "現地パートナー不祥事",
+    "category": "partner_scandal",
+    "triggerRules": {
+      "minTurn": 2,
+      "industries": ["energy", "food"]
+    },
+    "severityBase": 2,
+    "targetRules": {
+      "regionIds": ["SEA"],
+      "industries": ["energy", "food"],
+      "dealTags": ["distribution", "power"]
+    },
+    "immediateEffects": [
+      {
+        "key": "trustPenalty",
+        "value": 10
+      }
+    ],
+    "responseOptions": ["replace_operator", "increase_governance", "take_loss"],
+    "upsideUnlocks": ["control_buyout_unlock"]
+  }
+]

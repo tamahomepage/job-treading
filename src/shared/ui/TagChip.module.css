@@ -1,0 +1,26 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-1);
+  font-size: 12px;
+}
+
+.opportunity {
+  border-color: rgba(47, 183, 168, 0.4);
+  color: #8de5da;
+}
+
+.risk {
+  border-color: rgba(227, 166, 75, 0.4);
+  color: #ffd190;
+}
+
+.hq {
+  border-color: rgba(117, 167, 255, 0.4);
+  color: #a7c4ff;
+}

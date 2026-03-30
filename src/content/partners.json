@@ -1,0 +1,116 @@
+[
+  {
+    "id": "partner_sg_project_bank",
+    "name": "Singapore Project Bank",
+    "type": "bank",
+    "regions": ["SEA", "MiddleEast"],
+    "industries": ["energy", "infrastructure"],
+    "capabilityTags": ["finance", "infra_debt"],
+    "offerableSlots": ["finance"],
+    "preferenceWeights": {
+      "safety": 5,
+      "yield": 2,
+      "esg": 3,
+      "control": 1
+    },
+    "relationshipBase": 1,
+    "redLines": ["unhedged_fx", "weak_offtake"],
+    "hiddenTraits": ["likes_export_credit_support"],
+    "negotiationTopics": ["pricing", "guarantee", "long_tenor"]
+  },
+  {
+    "id": "partner_vn_state_utility",
+    "name": "Vietnam State Utility",
+    "type": "state_owned",
+    "regions": ["SEA"],
+    "industries": ["energy", "infrastructure"],
+    "capabilityTags": ["offtake", "operator", "government_access"],
+    "offerableSlots": ["offtake", "operator"],
+    "preferenceWeights": {
+      "safety": 4,
+      "price": 4,
+      "local_content": 3,
+      "control": 2
+    },
+    "relationshipBase": 1,
+    "redLines": ["operating_control"],
+    "hiddenTraits": ["prestige_sensitive"],
+    "negotiationTopics": ["pricing", "local_content", "guarantee"]
+  },
+  {
+    "id": "partner_jp_transformer",
+    "name": "Japan Transformer Co",
+    "type": "manufacturer",
+    "regions": ["Japan", "SEA", "MiddleEast"],
+    "industries": ["energy"],
+    "capabilityTags": ["technology", "grid", "manufacturer_capacity"],
+    "offerableSlots": ["technology"],
+    "preferenceWeights": {
+      "yield": 3,
+      "control": 1,
+      "safety": 2,
+      "esg": 1
+    },
+    "relationshipBase": 2,
+    "redLines": ["local_content"],
+    "hiddenTraits": [],
+    "negotiationTopics": ["pricing", "guarantee"]
+  },
+  {
+    "id": "partner_sea_conglomerate",
+    "name": "SEA Coastal Conglomerate",
+    "type": "conglomerate",
+    "regions": ["SEA"],
+    "industries": ["energy", "food", "infrastructure"],
+    "capabilityTags": ["partner", "land_access", "distribution"],
+    "offerableSlots": ["localPartner", "logistics"],
+    "preferenceWeights": {
+      "control": 5,
+      "prestige": 4,
+      "yield": 3,
+      "local_content": 2
+    },
+    "relationshipBase": 1,
+    "redLines": ["operating_control"],
+    "hiddenTraits": ["prestige_sensitive"],
+    "negotiationTopics": ["board_seat", "pricing", "local_content"]
+  },
+  {
+    "id": "partner_port_operator",
+    "name": "Maritime Terminal Operator",
+    "type": "logistics",
+    "regions": ["SEA", "MiddleEast"],
+    "industries": ["energy", "food", "infrastructure"],
+    "capabilityTags": ["port", "distribution", "operator"],
+    "offerableSlots": ["logistics", "operator"],
+    "preferenceWeights": {
+      "yield": 3,
+      "safety": 2,
+      "control": 2,
+      "local_content": 1
+    },
+    "relationshipBase": 0,
+    "redLines": [],
+    "hiddenTraits": [],
+    "negotiationTopics": ["pricing", "operating_control"]
+  },
+  {
+    "id": "partner_food_distributor",
+    "name": "Archipelago Food Distributor",
+    "type": "local_company",
+    "regions": ["SEA"],
+    "industries": ["food"],
+    "capabilityTags": ["distribution", "cold_chain", "operator"],
+    "offerableSlots": ["localPartner", "offtake", "operator", "logistics"],
+    "preferenceWeights": {
+      "yield": 3,
+      "control": 2,
+      "safety": 2,
+      "local_content": 3
+    },
+    "relationshipBase": 1,
+    "redLines": [],
+    "hiddenTraits": [],
+    "negotiationTopics": ["pricing", "local_content", "offtake_floor"]
+  }
+]

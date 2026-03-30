@@ -1,0 +1,81 @@
+[
+  {
+    "id": "finance",
+    "displayName": "Finance",
+    "weights": {
+      "expectedIrr": 4,
+      "paybackYears": -3,
+      "equityRequired": -1,
+      "cashBufferAfterInvestment": 2
+    },
+    "vetoRules": [
+      {
+        "key": "cashBufferAfterInvestment",
+        "op": "lt",
+        "value": 15,
+        "message": "投資後のキャッシュバッファが薄すぎます。"
+      }
+    ]
+  },
+  {
+    "id": "risk",
+    "displayName": "Risk Management",
+    "weights": {
+      "riskExposure": -3,
+      "structureScore": 2,
+      "cashBufferAfterInvestment": 1
+    },
+    "vetoRules": [
+      {
+        "key": "riskExposure",
+        "op": "gt",
+        "value": 18,
+        "message": "リスク露出が許容上限を超えています。"
+      }
+    ]
+  },
+  {
+    "id": "legal",
+    "displayName": "Legal",
+    "weights": {
+      "structureScore": 2,
+      "riskExposure": -1
+    },
+    "vetoRules": []
+  },
+  {
+    "id": "esg",
+    "displayName": "ESG",
+    "weights": {
+      "esgScore": 2,
+      "riskExposure": -1
+    },
+    "vetoRules": [
+      {
+        "key": "esgScore",
+        "op": "lt",
+        "value": 45,
+        "message": "ESGスコアが低く、説明可能性が不足しています。"
+      }
+    ]
+  },
+  {
+    "id": "management",
+    "displayName": "Management",
+    "weights": {
+      "expectedIrr": 2,
+      "structureScore": 2,
+      "cashBufferAfterInvestment": 1
+    },
+    "vetoRules": []
+  },
+  {
+    "id": "business_unit",
+    "displayName": "Business Unit",
+    "weights": {
+      "structureScore": 3,
+      "expectedIrr": 1
+    },
+    "vetoRules": []
+  }
+]

@@ -1,0 +1,40 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.label {
+  color: var(--text-2);
+  font-size: 12px;
+}
+
+.value {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.note {
+  color: var(--text-1);
+  font-size: 12px;
+}
+
+.default {
+  color: var(--text-0);
+}
+
+.good {
+  color: var(--accent-good);
+}
+
+.warn {
+  color: var(--accent-risk);
+}
+
+.danger {
+  color: var(--accent-danger);
+}
